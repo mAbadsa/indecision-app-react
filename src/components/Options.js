@@ -15,6 +15,7 @@ const Options = props => (
       <Option
         handleDeleteClick={props.handleDeleteOption}
         key={index}
+        count={index + 1}
         optionText={option}
       />
     ))}
