@@ -3,7 +3,7 @@
 .header {
     background-color: $off-black;
     color: white;
-    margin-bottom: $xl-size;
+    margin-bottom: $m-size;
     padding: $m-size 0;
 }
 
@@ -16,4 +16,11 @@
     color: $off-white;
     font-size: 1.6rem;
     font-weight: 500;
+}
+
+@media (min-width: 45rem) {
+    .header {
+        margin-bottom: $xl-size;
+    }
+    
 }

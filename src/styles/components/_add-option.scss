@@ -7,7 +7,8 @@
 
 .add-option {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  flex-direction: column;
   padding: $m-size;
 }
 
@@ -16,7 +17,17 @@
   border: none;
   border-bottom: 0.3rem solid darken($dark-blue, 10%);
   flex-grow: 1;
-  margin-right: $s-size;
+  margin: 0 0 $s-size 0;
   color: $off-white;
   padding: $s-size;
+}
+
+@media (min-width: 45rem) {
+  .add-option {
+    flex-direction: row;
+  }
+
+  .add-option__input {
+    margin: 0 $s-size 0 0;
+  }
 }
